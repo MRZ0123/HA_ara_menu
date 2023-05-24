@@ -13,7 +13,7 @@ def get_custom_config(file_location:str):
     return config
 
 # opening and extracing contents from config file
-config_file_location = os.getenv("ARAMARKCONFIG")
+config_file_location = os.getenv("ARAMARKCONFIG") # for this to work you need to MAKE an environment variable called ARAMARKCONFIG with the value exact filepath to your config
 if config_file_location:
     ara_config = get_custom_config(config_file_location)
     
